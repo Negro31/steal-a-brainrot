@@ -1,1 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Steal a Brainrot - Mobile Web</title>
+  <link rel="stylesheet" href="ui.css">
+</head>
+<body>
+  <canvas id="game"></canvas>
 
+  <div id="hud">
+    <div id="topbar">
+      <div id="playerName">Guest</div>
+      <div id="money">₿ 0</div>
+    </div>
+
+    <div id="buttons">
+      <button id="btnSteal">Çal</button>
+      <button id="btnBuy">Satın Al</button>
+    </div>
+
+    <div id="joystickZone">
+      <div id="thumb"></div>
+    </div>
+  </div>
+
+  <!-- Socket.io served from the server -->
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.156.0/build/three.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
