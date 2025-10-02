@@ -1,1 +1,11 @@
+html,body { margin:0; padding:0; height:100%; overflow:hidden; background:#111; }
+canvas { display:block; width:100vw; height:100vh; }
 
+#hud { position:absolute; left:0; right:0; top:0; bottom:0; pointer-events:none; }
+#topbar { display:flex; justify-content:space-between; padding:10px; color:white; font-family:sans-serif; pointer-events:auto;}
+#buttons { position:absolute; right:8px; bottom:120px; display:flex; flex-direction:column; gap:8px; pointer-events:auto; }
+#buttons button { padding:10px 14px; font-size:16px; border:none; border-radius:10px; background:rgba(255,255,255,0.12); color:white; }
+#joystickZone { position:absolute; left:16px; bottom:40px; width:120px; height:120px; background:rgba(255,255,255,0.04); border-radius:50%; pointer-events:auto; touch-action:none; }
+#thumb { width:48px; height:48px; background:rgba(255,255,255,0.2); border-radius:50%; position:relative; left:36px; top:36px; transform:translate(0,0); }
+#playerName { font-weight:600; }
+#money { font-weight:700; }
